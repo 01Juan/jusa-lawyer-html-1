@@ -1,3 +1,10 @@
+## O que aprendi?
+Menu hamburger do zero com suas animações.
+Carrossel, consegui juntar 4 formas de passar os cards.
+Meu entendimento sobre como estruturar melhor o html e css melhoraram.
+Meu entendimento de javascript também melhorou. Usei bem seus recursos no carrossel.
+Agora é partir para a versão 2.0.
+
 ## Lawyer
 > Projeto 1 - Estrutura estática (html e css)
 
@@ -8,7 +15,7 @@
 
 **HTML Semântico**
 - https://www.w3schools.com/html/html5_semantic_elements.asp
-- https://developer.mozilla.org/pt-BR/docs/Glossary/Semantics#sem%C3%A2ntica_em_html
+- https://developer.mozilla.org/pt-BR/docs/Glossary/Semantics#semântica_em_html
 - https://www.freecodecamp.org/news/semantic-html5-elements/
 
 ### Trabalhando com fontes

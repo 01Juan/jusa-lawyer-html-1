@@ -1,0 +1,15 @@
+html {font-size: 62.5%;}
+body{font-size: 1.6rem;}
+
+.wrap { width: 175rem; height: 30rem; padding: 0; overflow: hidden; }
+.frame { width: 100rem; height: 58.75rem; /* border: 1px solid black;  */ }
+.frame {
+    --var: 0.5;
+    -ms-zoom: var(--var);
+    -moz-transform: var(--var);
+    -moz-transform-origin: 0 0;
+    -o-transform: scale(var(--var));
+    -o-transform-origin: 0 0;
+    -webkit-transform: scale(var(--var));
+    -webkit-transform-origin: 0 0;
+}

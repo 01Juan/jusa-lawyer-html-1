@@ -1,0 +1,87 @@
+/*=== ABOUT ==================================*/
+/*=== Especificidade 001-009 ==DEFUN===========================*/
+/*=== Especificidade 010-099 ==DEFUN===========================*/
+/*=== Especificidade 100-999 ==DEFUN===========================*/
+#case-results {
+    background: var(--color-lightGray);
+    display: grid;
+    padding: var(--margin-page-top) var(--margin-page);
+}
+
+#case-results legend,
+#case-results h2,
+#case-results h3,
+#case-results button,
+#case-results a {color: var(--color-primary);}
+#case-results h5 {color: var(--color-darkGray);}
+#case-results a {text-decoration: underline;}
+#case-results button {
+    border-color: var(--color-primary);
+    width: 100%;
+}
+
+#case-results .cards {
+    display: grid;
+    margin-top: var(--margin-photo-top);
+}
+#case-results .cards fieldset {
+    margin: calc(var(--margin-page-top)/2) var(--margin-page);
+}
+#case-results .cards legend {
+    color: var(--color-secondary);
+}
+
+#case-results .card {
+    background: var(--color-white);
+}
+#case-results .card img {width: -webkit-fill-available;}
+#case-results .card ~ .card {margin-top: var(--margin-button-top);}
+#case-results .card h5 {margin-bottom: var(--margin-description-top);}
+
+
+@media (min-width: 767px) {
+    /*=== ALL ==DEFUN===============================*/
+    /*=== Especificidade 001-009 ====767=======================*/
+    /*=== Especificidade 010-099 ====767=======================*/
+    /*=== Especificidade 100-999 ====767=======================*/
+}
+@media (min-width: 992px) {
+    /*=== ALL ==DEFUN===============================*/
+    /*=== Especificidade 001-009 ====992=======================*/
+    /*=== Especificidade 010-099 ====992=======================*/
+    /*=== Especificidade 100-999 ====992=======================*/
+    #case-results {
+        padding: 14rem var(--margin-page);
+    }
+    #case-results article {
+        position: relative;
+    }
+    #case-results article button {
+        margin-top: 0;
+        position: absolute;
+        right: 0;
+        top: 0;
+        width: 28.6rem;
+    }
+    
+    #case-results .cards {
+        gap: 3rem;
+        grid-template-columns: 1fr 1fr;
+    }
+    #case-results .cards fieldset {
+        margin: 3.2rem;
+    }
+    #case-results .card ~ .card {margin-top: 0}
+    #case-results .card img {width: 100%;}
+}
+@media (min-width: 1023px) {
+    /*=== Especificidade 001-009 ===1023=======================*/
+    /*=== Especificidade 010-099 ===1023=======================*/
+    /*=== Especificidade 100-999 ===1023=======================*/
+}
+@media (min-width: 1200px) {
+    /*=== Especificidade 001-009 ===1200=======================*/
+    /*=== Especificidade 010-099 ===1200=======================*/
+    /*=== Especificidade 100-999 ===1200=======================*/
+}
+/*=== ABOUT END ==================================*/

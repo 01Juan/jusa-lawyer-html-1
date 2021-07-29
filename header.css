@@ -1,0 +1,212 @@
+/*=== HEARDER ==================================*/
+/*=== Especificidade 001-009 ==DEFUN===========================*/
+header {
+    align-items: center;
+    background: var(--color-primary);
+    display: flex;
+    height: var(--height-header);
+    justify-content: space-between;
+    padding: var(--margin-page);
+    position: relative;
+}
+
+header nav {
+    background: var(--color-primary);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 0;
+    left: 0;
+    overflow: hidden;
+    position: absolute;
+    top: var(--height-header);
+    width: 100%;
+    transition: height var(--time-transition);
+}
+
+/*=== Especificidade 010-099 ==DEFUN===========================*/
+.logo {align-items: center; display: inline-flex;}
+.logo img {margin-right: 1.5rem;}
+.logo h2 {
+    font-size: 2.8rem;
+    line-height: 1;
+}
+
+.hamburger {
+    background: var(--color-secondary);
+    clip-path: circle();
+    color: var(--color-secondary);
+    cursor: pointer;
+    height: 4.6rem;
+    width: 4.6rem;
+}
+
+.hamburgerLinhas1,
+.hamburgerLinhas2,
+.hamburgerLinhas3 {
+    background: var(--color-white);
+    content: '';
+    display: block;
+    height: 0.2rem;
+    width: 2.3rem;
+    transform-origin: 0 0;
+    position: absolute;
+}
+
+.hamburgerLinhas1 {
+    transform: translate(1.15rem, 1.15rem);
+    transition: all var(--time-transition);
+}
+
+.hamburgerLinhas2 {
+    transform: translate(1.15rem, 2.3rem);
+    transition: all var(--time-transition);
+}
+
+.hamburgerLinhas3 {
+    transform: translate(1.15rem, 3.45rem);
+    transition: all var(--time-transition);
+}
+
+.divider-1 {
+    background: linear-gradient(
+        270deg,
+        transparent,
+        var(--color-darkGray) 50%,
+        transparent
+    );
+    height: 1px;
+    margin: 0 var(--margin-page);
+    position: absolute;
+    top: calc(var(--height-header) - 1.5rem);
+    left: 0;
+    width: calc(100% - 3rem);
+}
+
+.opcoes {display: grid; gap: 2.4rem;}
+
+.opcoes a {
+    font-size: 1.5rem;
+    font-weight: bold;
+    position: relative;
+}
+
+.opcoes a::after {
+    background: var(--color-secondary);
+    bottom: 0;
+    content: '';
+    height: 2px;
+    left: 0;
+    position: absolute;
+    transition: all var(--time-transition);
+    width: 0;
+}
+.opcoes a:hover {
+    color: var(--color-secondary);
+    transition: all var(--time-transition);
+}
+
+.opcoes a:hover::after {
+    transition: all var(--time-transition);
+    width: 100%;
+}
+
+.contact {display: grid; gap: 2.4rem;}
+.contact a {transition: all var(--time-transition);}
+.contact a:hover {
+    transform: translateY(-20%);
+    transition: all var(--time-transition);
+}
+
+
+/*=== Especificidade 100-999 ==DEFUN===========================*/
+#hamburger-checkbox {display: none;}
+#hamburger-checkbox:checked ~ .container .hamburgerLinhas1 {
+    width: 3.25rem;
+    transform: translate(1.15rem, 1.15rem) rotate(45deg);
+    transition: all var(--time-transition);
+}
+
+#hamburger-checkbox:checked ~ .container .hamburgerLinhas2 {
+    opacity: 0;
+    transition: all var(--time-transition);
+}
+
+#hamburger-checkbox:checked ~ .container .hamburgerLinhas3 {
+    width: 3.25rem;
+    transform: translate(1.15rem, 3.45rem) rotate(-45deg);
+    transition: all var(--time-transition);
+}
+
+#hamburger-checkbox:checked ~ .container nav::before {content: '';}
+#hamburger-checkbox:checked ~ .container nav {
+    height: calc(100vh - var(--height-header));
+    overflow: hidden;
+    padding: var(--margin-page);
+    transition: all var(--time-transition);
+}
+
+@media (min-width: 767px) {
+    /*=== ALL ==DEFUN===============================*/
+    :root {
+        --height-header: 15.6rem;
+    }
+
+    /*=== Especificidade 001-009 ====767=======================*/
+    header nav {
+        background: transparent;
+        height: var(--height-header);
+        padding: var(--margin-page);
+        top: 0;
+    }
+    header label {display: none;}
+    
+/*=== Especificidade 010-099 ====767=======================*/
+    .opcoes {
+        align-items: center;
+        grid-auto-flow: column;
+        height: calc(var(--height-header) - 3rem);
+        margin-left: auto;
+        width: fit-content;
+        transition: all var(--time-transition);
+    }
+    .contact {display: none;}
+
+    /*=== Especificidade 100-999 ====767=======================*/
+    :not(#hamburger-checkbox:checked) ~ .container nav {
+        visibility: visible;
+    }
+    #hamburger-checkbox:checked ~ .container nav::before {content: unset;}
+}
+
+@media (min-width: 992px) {
+    /*=== ALL ==DEFUN===============================*/
+    /*=== Especificidade 001-009 ====992=======================*/
+    header {
+        --margin-page: 1.5rem;
+        padding: var(--margin-page);
+        padding-left: 13.5rem;
+        transition: all var(--time-transition);
+    }
+    header nav {
+        padding: var(--margin-page);
+    }
+    /*=== Especificidade 010-099 ====992=======================*/
+    .opcoes {
+        margin-right: 13.5rem;
+        transition: all var(--time-transition);
+    }
+    .divider-1 {
+        margin: 0 13.5rem;
+        width: calc(100% - 27rem);
+    }
+/*=== Especificidade 100-999 ====992=======================*/
+}
+/*=== Especificidade 001-009 ===1023=======================*/
+/*=== Especificidade 010-099 ===1023=======================*/
+/*=== Especificidade 100-999 ===1023=======================*/
+
+/*=== Especificidade 001-009 ===1200=======================*/
+/*=== Especificidade 010-099 ===1200=======================*/
+/*=== Especificidade 100-999 ===1200=======================*/
+/*=== HEARDER END ==================================*/

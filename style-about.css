@@ -1,0 +1,143 @@
+* {
+    -webkit-box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+    -moz-box-sizing: border-box;
+    -moz-osx-font-smoothing: grayscale;
+    box-sizing: border-box;
+    color: #1E2027;
+    font-family: 'Mulish', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    margin: 0;
+    padding: 0;
+}
+
+/* html {
+    font-size: 62.5%;
+} */
+
+body{
+    display: flex;
+    /* font-size: 1.6rem; */
+    justify-content: center;
+    min-height: min-content;
+    min-width: min-content;
+}
+
+.container {
+    background: #F0EEE9;
+    max-width: 120rem;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    height: 100vh;
+    width: 100%;
+}
+
+fieldset{
+    border: 2px solid #DFAE4F;
+    border-bottom: none;
+    border-left: none;
+    border-right: none;
+    margin-top: 4rem;
+    padding: 0;
+}
+
+legend{
+    font-size: 1.25rem;
+    line-height: 1.25rem;
+    margin-left: 5rem;
+    min-width: -webkit-fill-available;
+    padding-left: 0.5rem;
+}
+
+h1{
+    font-size: 1.75rem;
+    line-height: 2.375rem;
+    font-family: 'Playfair Display', serif;
+    padding: 2rem 0 1.5rem 0;
+}
+
+h3{
+    color: #666D79;
+    font-size: 1.125rem;
+    text-align: justify;
+    line-height: 1.625rem;
+    padding-bottom: 3rem;
+}
+
+hr{
+    border-left: none;
+    padding-bottom: 2.5rem;
+}
+
+section{
+    display: flex;
+    padding-bottom: 3rem;
+}
+
+h2{
+    font-size: 1.25rem;
+    line-height: 1.625rem;
+}
+
+h4{
+    font-weight: bold;
+    font-size: 1rem;
+    line-height: 1.5rem;
+    color: #DFAE4F;
+}
+
+.rubrica{
+    padding-right: 1.5rem;
+}
+
+section div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    line-height: 5.375rem;
+}
+
+.foto{
+    box-shadow: -1rem -1rem #DFAE4F;
+    margin-left: 1.375rem;
+}
+
+@media (min-width: 55rem) {
+    .container {
+        display: flex;
+        height: 100%;
+        min-height: 58.875rem;
+        max-height: min-content;
+        min-width: 75rem;
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    article{
+        margin: 16rem  8.5rem 0 52rem;
+    }
+
+    fieldset{
+        margin-top: 0;
+    }
+
+    h1{
+        font-size: 2.875rem;
+        line-height: 3.8rem;
+        padding: 2rem 0 2rem 0;
+    }
+
+    .foto{
+        box-shadow: -2rem -2rem #DFAE4F;
+        margin-left: 10.5rem;
+        margin-top: 13.25rem;
+
+        width: 535px;
+        height: 550px;
+        object-fit: cover;
+        position: absolute;
+    }
+}

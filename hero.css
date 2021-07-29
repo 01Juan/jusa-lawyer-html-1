@@ -1,0 +1,65 @@
+/*=== HERO ==================================*/
+/*=== Especificidade 001-009 ==DEFUN===========================*/
+/*=== Especificidade 010-099 ==DEFUN===========================*/
+.hero {
+    background: var(--color-primary);
+    padding: var(--margin-page-top) var(--margin-page);
+}
+h1 ~ .description {padding-top: var(--margin-font-top);}
+
+.photo {
+    display: block;
+    margin: var(--margin-photo-top) auto calc(-7.6rem - var(--margin-page-top));
+    max-width: 57rem;
+}
+/*=== Especificidade 100-999 ==DEFUN===========================*/
+
+
+@media (min-width: 767px) {
+    /*=== ALL ==DEFUN===============================*/
+    /*=== Especificidade 001-009 ====767=======================*/
+    /*=== Especificidade 010-099 ====767=======================*/
+    .buttons {justify-content: center;}
+    /*=== Especificidade 100-999 ====767=======================*/
+}
+
+@media (min-width: 992px) {
+    /*=== ALL ==DEFUN===============================*/
+    /*=== Especificidade 001-009 ====992=======================*/
+    /*=== Especificidade 010-099 ====992=======================*/
+    section.hero {
+        padding-top: 14rem;
+        position: relative;
+    }
+    .photo {
+        margin-bottom: calc(-12.1rem - var(--margin-page-top));
+    }
+    /*=== Especificidade 100-999 ====992=======================*/
+}
+@media (min-width: 1023px) {
+    /*=== ALL ==DEFUN===============================*/
+    /*=== Especificidade 001-009 ===1023=======================*/
+    /*=== Especificidade 010-099 ===1023=======================*/
+    /*=== Especificidade 100-999 ===1023=======================*/
+}
+@media (min-width: 1200px) {
+    /*=== Especificidade 001-009 ===1200=======================*/
+    /*=== Especificidade 010-099 ===1200=======================*/
+    .hero {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 2.9rem;
+    }
+    h1 {width: max-content;}
+    .description {
+        max-width: fit-content;
+    }
+    .hero .description {font-size: 2.4rem;}
+    .buttons {justify-content: unset;}
+    .photo {
+        margin-top: unset;
+        width: 100%;
+    }
+    /*=== Especificidade 100-999 ===1200=======================*/
+}
+/*=== HERO END ==================================*/

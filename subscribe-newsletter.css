@@ -1,0 +1,103 @@
+/*=== ABOUT ==================================*/
+/*=== Especificidade 001-009 ==DEFUN===========================*/
+/*=== Especificidade 010-099 ==DEFUN===========================*/
+/*=== Especificidade 100-999 ==DEFUN===========================*/
+#subscribe-newsletter {
+    background: var(--color-primary);
+    display: grid;
+    padding: 6rem var(--margin-page);
+    position: relative;
+}
+
+#subscribe-newsletter .description {
+    max-width: 50rem;
+}
+
+#subscribe-newsletter input {
+    border: none;
+    font-size: 1.8rem;
+    height: 8rem;
+    margin-top: var(--margin-button-top);
+    min-width: 20rem;
+    padding-left: var(--gap-page);
+    width: 100%;
+}
+
+#subscribe-newsletter input::placeholder {
+    color: var(--color-white);
+    font-size: 1.4rem;
+}
+
+#subscribe-newsletter .button-orange {
+    background-color: var(--color-secondary);
+}
+
+#subscribe-newsletter .button-black {
+    background-color: transparent;
+    border: solid 0.1rem var(--color-white);
+}
+
+#subscribe-newsletter .divider-1 {
+    background: linear-gradient(
+        270deg,
+        transparent,
+        var(--color-darkGray) 50%,
+        transparent
+    );
+    height: 1px;
+    bottom: 0;
+    top: unset;
+    width: calc(100vw - var(--margin-page)*2);
+}
+
+@media (min-width: 767px) {
+    /*=== ALL ==DEFUN===============================*/
+    /*=== Especificidade 001-009 ====767=======================*/
+    /*=== Especificidade 010-099 ====767=======================*/
+    /*=== Especificidade 100-999 ====767=======================*/
+    #subscribe-newsletter {
+        grid-template-columns: repeat(2, calc(100%/2 - var(--gap-page)/2));
+        /* gap: var(--gap-page); */
+        justify-content: space-between;
+    }
+    
+    #subscribe-newsletter .buttons {
+        align-items: center;
+        gap: unset;
+        position: relative;
+    }
+
+    #subscribe-newsletter input {
+        margin-top: 1.6rem;
+    }
+    
+    #subscribe-newsletter .button-orange {
+        height: 4.8rem;
+        min-width: unset;
+        right: var(--gap-page);
+        position: absolute;
+        width: 17rem;
+    }
+    
+    #subscribe-newsletter .button-black {
+        /* margin-right: calc(var(--margin-page)* -20); */
+        width: 100%;
+    }
+}
+@media (min-width: 992px) {
+    /*=== ALL ==DEFUN===============================*/
+    /*=== Especificidade 001-009 ====992=======================*/
+    /*=== Especificidade 010-099 ====992=======================*/
+    /*=== Especificidade 100-999 ====992=======================*/
+}
+@media (min-width: 1023px) {
+    /*=== Especificidade 001-009 ===1023=======================*/
+    /*=== Especificidade 010-099 ===1023=======================*/
+    /*=== Especificidade 100-999 ===1023=======================*/
+}
+@media (min-width: 1200px) {
+    /*=== Especificidade 001-009 ===1200=======================*/
+    /*=== Especificidade 010-099 ===1200=======================*/
+    /*=== Especificidade 100-999 ===1200=======================*/
+}
+/*=== ABOUT END ==================================*/

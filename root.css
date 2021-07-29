@@ -1,0 +1,155 @@
+:root {
+    --color-primary: #1E2027;
+    --color-secondary: #DFAE4F;
+    --color-darkGray: #666D79;
+    --color-ashGray: #C7C3B3;
+    --color-lightGray: #F0EEE9;
+    --color-white: #FFFFFF;
+    --fontM: 'Mulish', sans-serif;
+    --fontP: 'Playfair Display', serif;
+    --fontR: 'Roboto', sans-serif;
+    --gap-page: 1.5rem;
+    --height-logo: 4.2rem;
+    --height-header: 10.2rem;
+    --line-minor: 6rem;
+    --margin-description-top: 2.4rem;
+    --margin-font-top: 3.2rem;
+    --margin-button-top: 3.2rem;
+    --margin-page: 1.5rem;
+    --margin-page-top: 6.4rem;
+    --margin-photo-top: 4.8rem;
+    --time-transition: 400ms;
+}
+
+* {
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+            box-sizing: border-box;
+
+    -moz-osx-font-smoothing: grayscale;
+     -webkit-font-smoothing: antialiased;
+
+    font-family: var(--fontM);
+    font-weight: normal;
+
+    color: var(--color-white);
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+/*=== ALL ==DEFUN===============================*/
+/*=== Especificidade 001-009 ==DEFUN===========================*/
+html {font-size: 62.5%;}
+body {background: #E5E5E5;
+    font-size: 1.6rem;
+    /* max-width: 1440px; */
+    max-width: 1920px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+body::-webkit-scrollbar {
+    width: 0;
+    height: 0;
+}
+
+a {font-size: 1.4rem;}
+h1 {font-size: 3.6rem;}
+h2 {font-size: 2.8rem;}
+h3 {font-size: 2.2rem;}
+h4 {font-size: 2.0rem;}
+h5 {font-size: 1.8rem;}
+h6 {font-size: 1.4rem;}
+
+fieldset {
+    border: none;
+    border-top: 0.2rem solid var(--color-secondary);
+}
+
+legend {
+    font-size: 2rem;
+    line-height: 1;
+    margin-left: var(--line-minor);
+    min-width: -webkit-fill-available;
+    min-width: -moz-fill-available;
+    min-width: -o-fill-available;
+    padding-left: 1rem;
+}
+
+button {
+    border: none;
+    font-size: 1.8rem;
+    height: 8rem;
+    margin-top: var(--margin-button-top);
+    min-width: 20rem;
+    width: 100%;
+}
+
+/*=== Especificidade 010-099 ==DEFUN===========================*/
+.title {font-family: var(--fontP);
+    padding-top: var(--margin-font-top);
+}
+
+.description {padding-top: var(--margin-description-top);}
+
+.button-orange {
+    background-color: var(--color-secondary);
+}
+
+.button-black {
+    background-color: transparent;
+    border: solid 0.1rem var(--color-white);
+}
+
+
+/*=== Especificidade 100-999 ==DEFUN===========================*/
+
+
+@media (min-width: 767px) {
+    /*=== ALL ==DEFUN===============================*/
+    :root {
+        --line-minor: 12rem;
+    }
+    /*=== Especificidade 001-009 ====767=======================*/
+    button {
+        width: 20rem;
+    }
+    /*=== Especificidade 010-099 ====767=======================*/
+    .buttons {
+        display: flex;
+        gap: var(--margin-button-top);
+    }
+    /*=== Especificidade 100-999 ====767=======================*/
+}
+
+@media (min-width: 992px) {
+    /*=== ALL ==DEFUN===============================*/
+    :root {
+        --margin-page-top: 18rem;
+        --margin-page: 13.5rem;
+    }
+    /*=== Especificidade 001-009 ====992=======================*/
+    /*=== Especificidade 010-099 ====992=======================*/
+    .container section[id='*'] {
+        padding: var(--margin-page-top) var(--margin-page);
+    }
+    /*=== Especificidade 100-999 ====992=======================*/
+}
+@media (min-width: 1023px) {
+    /*=== ALL ==DEFUN===============================*/
+    /*=== Especificidade 001-009 ===1023=======================*/
+    /*=== Especificidade 010-099 ===1023=======================*/
+    /*=== Especificidade 100-999 ===1023=======================*/
+}
+@media (min-width: 1200px) {
+    /*=== ALL ==DEFUN===============================*/
+    /*=== Especificidade 001-009 ===1200=======================*/
+    h1 {font-size: 6.4rem;}
+    h2.title {font-size: 4.6rem;}
+
+    /*=== Especificidade 010-099 ===1200=======================*/
+    /*=== Especificidade 100-999 ===1200=======================*/
+}
+/*=== ALL END ==================================*/

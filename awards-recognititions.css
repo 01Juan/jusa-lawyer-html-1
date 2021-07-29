@@ -1,0 +1,63 @@
+/*=== awards-recognititions ==================================*/
+/*=== Especificidade 001-009 ==DEFUN===========================*/
+/*=== Especificidade 010-099 ==DEFUN===========================*/
+/*=== Especificidade 100-999 ==DEFUN===========================*/
+section#awards-recognititions {
+    background: var(--color-lightGray);
+    padding: var(--margin-page);
+    padding-top: 14rem;
+    padding-bottom: var(--margin-page-top);
+}
+#awards-recognititions h2 {
+    color: var(--color-primary);
+    font-family: var(--fontR);
+    padding-top: unset;
+}
+#awards-recognititions section {
+    display: grid;
+    gap: 1.3rem;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    margin-top: var(--margin-button-top);
+    padding: unset;
+}
+#awards-recognititions img {
+    width: 100%;
+}
+
+
+@media (min-width: 767px) {
+    /*=== ALL ==DEFUN===============================*/
+    /*=== Especificidade 001-009 ====767=======================*/
+    /*=== Especificidade 010-099 ====767=======================*/
+    /*=== Especificidade 100-999 ====767=======================*/
+}
+
+@media (min-width: 992px) {
+    /*=== ALL ==DEFUN===============================*/
+    /*=== Especificidade 001-009 ====992=======================*/
+    /*=== Especificidade 010-099 ====992=======================*/
+    /*=== Especificidade 100-999 ====992=======================*/
+    section#awards-recognititions {
+        align-items: center;
+        display: flex;
+        gap: 11rem;
+        padding-top: 22.4rem;
+    }
+    #awards-recognititions section {
+        margin-top: unset;
+    }
+}
+@media (min-width: 1023px) {
+    /*=== Especificidade 001-009 ===1023=======================*/
+    /*=== Especificidade 010-099 ===1023=======================*/
+    /*=== Especificidade 100-999 ===1023=======================*/
+}
+@media (min-width: 1200px) {
+    /*=== Especificidade 001-009 ===1200=======================*/
+    /*=== Especificidade 010-099 ===1200=======================*/
+    /*=== Especificidade 100-999 ===1200=======================*/
+    #awards-recognititions section {
+        gap: 5.7rem;
+    }
+}
+/*=== awards-recognititions END ==================================*/

@@ -1,0 +1,154 @@
+/*=== ABOUT ==================================*/
+/*=== Especificidade 001-009 ==DEFUN===========================*/
+/*=== Especificidade 010-099 ==DEFUN===========================*/
+/*=== Especificidade 100-999 ==DEFUN===========================*/
+#testiomonials {
+    background: var(--color-lightGray);
+    display: grid;
+    grid-template-columns: 100%;
+    padding: var(--margin-page-top) var(--margin-page);
+    width: 100%;
+}
+
+#testiomonials legend,
+#testiomonials h2 {color: var(--color-primary);}
+#testiomonials h5 {color: var(--color-darkGray);}
+#testiomonials h6 {
+    color: var(--color-secondary);
+    font-weight: bold;
+}
+
+#testiomonials .hidden {
+    display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+#testiomonials .cards {
+    display: flex;
+    scroll-behavior: smooth;
+    
+    /* Works on Firefox */
+    overflow-x: scroll;
+    scroll-snap-type: x mandatory;
+    scrollbar-width: 0;
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+#testiomonials .cards::-webkit-scrollbar {
+    width: 0;
+    height: 0;
+}
+
+#testiomonials .card {
+    background: var(--color-white);
+    margin-top: var(--margin-photo-top);
+    padding: 0 calc(var(--margin-page)/2);
+    min-width: fit-content;
+    scroll-snap-align: start;
+}
+
+#testiomonials .card fieldset {
+    border-left: 0.2rem solid var(--color-secondary);
+    border-top: none;
+    margin: calc(var(--margin-page-top)/2) 0;
+    padding: 0 calc(var(--margin-page)/2);
+}
+
+#testiomonials .card section {
+    align-items: center;
+    display: flex;
+    gap: var(--margin-page);
+}
+
+#testiomonials footer {
+    align-items: center;
+    background: var(--color-white);
+    display: flex;
+    gap: calc(var(--margin-page)/2);
+    height: calc(var(--margin-font-top)*2 + 1.2rem);
+    justify-content: center;
+}
+
+#testiomonials .button {
+    background-color: var(--color-lightGray);
+    border-radius: 50%;
+    height: 1.2rem;
+    width: 1.2rem;
+}
+
+#testiomonials .active {
+    background-color: var(--color-secondary);
+}
+
+
+
+  
+@media (min-width: 767px) {
+    /*=== ALL ==DEFUN===============================*/
+    /*=== Especificidade 001-009 ====767=======================*/
+    /*=== Especificidade 010-099 ====767=======================*/
+    /*=== Especificidade 100-999 ====767=======================*/
+    #testiomonials {
+        grid-template-columns: repeat(2, calc(100%/2 - var(--margin-page)/2));
+        gap: var(--margin-page);
+    }
+
+    #testiomonials .buttons {
+        justify-content: unset;
+    }
+    
+    #testiomonials .card {
+        margin-top: 0;
+    }
+
+    #testiomonials article {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+}
+
+@media (min-width: 992px) {
+    /*=== ALL ==DEFUN===============================*/
+    :root {
+        --margin-page-top: 14rem;
+    }
+    /*=== Especificidade 001-009 ====992=======================*/
+    /*=== Especificidade 010-099 ====992=======================*/
+    /*=== Especificidade 100-999 ====992=======================*/
+    #testiomonials {
+        grid-template-columns: repeat(2, calc(100%/2 - var(--gap-page)/2));
+        gap: var(--gap-page);
+    }
+
+    #testiomonials .card {
+        padding: 0 calc(var(--gap-page)/2);
+    }
+    
+    #testiomonials .card fieldset {
+        padding: 0 calc(var(--gap-page)/2);
+    }
+    
+    #testiomonials .card section {
+        gap: var(--gap-page);
+    }
+
+    #testiomonials footer {
+        gap: calc(var(--gap-page)/2);
+    }
+
+}
+
+@media (min-width: 1200px) {
+    /*=== Especificidade 001-009 ===1200=======================*/
+    /*=== Especificidade 010-099 ===1200=======================*/
+    /*=== Especificidade 100-999 ===1200=======================*/
+    #testiomonials {
+        grid-template-columns: repeat(2, calc(100%/2 - var(--margin-page)/2));
+        gap: var(--margin-page);
+    }
+
+    #testiomonials .card {
+        padding: 0 calc(var(--margin-page)/2);
+    }
+}

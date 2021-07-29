@@ -1,0 +1,80 @@
+/*=== practice-areas ==================================*/
+/*=== Especificidade 001-009 ==DEFUN===========================*/
+/*=== Especificidade 010-099 ==DEFUN===========================*/
+.areas {
+    background: var(--color-white);
+    display: grid;
+    gap: 1px;
+    margin-top: var(--margin-button-top);
+}
+/*=== Especificidade 100-999 ==DEFUN===========================*/
+#practice-areas {
+    background: var(--color-primary);
+    padding: var(--margin-page-top) var(--margin-page) var(--margin-button-top) var(--margin-page);
+}
+#practice-areas section {
+    background: var(--color-primary);
+    padding: var(--margin-font-top) 0;
+}
+#practice-areas section h4 {
+    margin-top: var(--margin-font-top);
+}
+
+@media (min-width: 767px) {
+    /*=== ALL ==DEFUN===============================*/
+    /*=== Especificidade 001-009 ====767=======================*/
+    /*=== Especificidade 010-099 ====767=======================*/
+    .areas {
+        grid-area: 2 / 1 / 3 / 3;
+        grid-template-columns: 1fr 1fr;
+    }
+    /*=== Especificidade 100-999 ====767=======================*/
+    #practice-areas .areas section:nth-child(2n+1) {
+        padding-right: var(--margin-font-top);
+    }
+    #practice-areas .areas section:nth-child(2n+2) {
+        padding-left: var(--margin-font-top);
+    }
+    #practice-areas {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    #practice-areas button {
+        margin: unset;
+        margin-left: auto;
+    }
+}
+
+@media (min-width: 992px) {
+    /*=== ALL ==DEFUN===============================*/
+    /*=== Especificidade 001-009 ====992=======================*/
+    /*=== Especificidade 010-099 ====992=======================*/
+    /*=== Especificidade 100-999 ====992=======================*/
+    #practice-areas {padding-bottom: var(--margin-page-top)}
+}
+@media (min-width: 1023px) {
+    /*=== Especificidade 001-009 ===1023=======================*/
+    /*=== Especificidade 010-099 ===1023=======================*/
+    /*=== Especificidade 100-999 ===1023=======================*/
+}
+@media (min-width: 1200px) {
+    /*=== Especificidade 001-009 ===1200=======================*/
+    /*=== Especificidade 010-099 ===1200=======================*/
+    .areas {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    /*=== Especificidade 100-999 ===1200=======================*/
+    #practice-areas .areas section:nth-child(3n+1) {
+        padding-left: 0;
+        padding-right: var(--margin-font-top);
+    }
+    #practice-areas .areas section:nth-child(3n+2) {
+        padding-left: var(--margin-font-top);
+        padding-right: var(--margin-font-top);
+    }
+    #practice-areas .areas section:nth-child(3n+3) {
+        padding-left: var(--margin-font-top);
+        padding-right: 0;
+    }
+}
+/*=== practice-areas END ==================================*/

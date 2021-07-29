@@ -1,0 +1,90 @@
+/*=== ABOUT ==================================*/
+/*=== Especificidade 001-009 ==DEFUN===========================*/
+/*=== Especificidade 010-099 ==DEFUN===========================*/
+/*=== Especificidade 100-999 ==DEFUN===========================*/
+#articles {
+    background: var(--color-primary);
+    display: grid;
+    padding: var(--margin-page-top) var(--margin-page);
+}
+
+#articles a {text-decoration: underline;}
+#articles button {width: 100%;}
+
+#articles .cards {
+    display: grid;
+    margin-top: var(--margin-photo-top);
+}
+
+#articles .card img {width: -webkit-fill-available;}
+#articles .legend {
+    display: flex;
+    justify-content: space-between;
+    margin-top: var(--margin-font-top);
+}
+#articles .legend legend:first-child {color: var(--color-secondary);}
+#articles .card legend {
+    font-size: 1.8rem;
+    font-weight: bold;
+    min-width: unset;
+    margin-left: 0;
+    padding-left: 0;
+}
+#articles .card fieldset {
+    border-color: var(--color-white);
+    margin-top: var(--margin-description-top);
+}
+#articles .card h3 {
+    font-weight: bold;
+    margin-top: var(--margin-font-top);}
+#articles .card ~ .card {margin-top: var(--margin-button-top);}
+#articles .card h5 {margin-bottom: 4.8rem;}
+#articles .card a {font-size: 1.6rem;}
+
+
+@media (min-width: 767px) {
+    /*=== ALL ==DEFUN===============================*/
+    /*=== Especificidade 001-009 ====767=======================*/
+    /*=== Especificidade 010-099 ====767=======================*/
+    /*=== Especificidade 100-999 ====767=======================*/
+}
+@media (min-width: 992px) {
+    /*=== ALL ==DEFUN===============================*/
+    /*=== Especificidade 001-009 ====992=======================*/
+    /*=== Especificidade 010-099 ====992=======================*/
+    /*=== Especificidade 100-999 ====992=======================*/
+    /* #case-results {
+        padding: 14rem var(--margin-page);
+    } */
+    #articles article {
+        position: relative;
+    }
+    #articles article button {
+        margin-top: 0;
+        position: absolute;
+        right: 0;
+        top: 0;
+        width: 20rem;
+    }
+    
+    #articles .cards {
+        gap: 3rem;
+        grid-template-columns: 1fr 1fr;
+    }
+    /* #case-results .cards fieldset {
+        margin: 3.2rem;
+    } */
+    #articles .card ~ .card {margin-top: 0}
+    #articles .card img {width: 100%;}
+}
+@media (min-width: 1023px) {
+    /*=== Especificidade 001-009 ===1023=======================*/
+    /*=== Especificidade 010-099 ===1023=======================*/
+    /*=== Especificidade 100-999 ===1023=======================*/
+}
+@media (min-width: 1200px) {
+    /*=== Especificidade 001-009 ===1200=======================*/
+    /*=== Especificidade 010-099 ===1200=======================*/
+    /*=== Especificidade 100-999 ===1200=======================*/
+}
+/*=== ABOUT END ==================================*/
